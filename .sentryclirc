@@ -1,0 +1,7 @@
+[defaults]
+url=https://sentry.io
+org=wangwenhan
+project=vue-typescript
+
+[auth]
+token=2a4d9c1e1a4f4d02bd7c9bc12fbe6c72d4da6e0ced2f4a4eab99d3df87da5f2f

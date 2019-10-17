@@ -1,0 +1,101 @@
+@import './var';
+
+body,
+div,
+span,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+dl,
+dt,
+dd,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b,
+textarea,
+button,
+input,
+select,
+figure,
+figcaption {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-weight: normal;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  color: #333;
+  font-family: PingFang SC, Helvetica Neue, Arial, sans-serif;
+  line-height: 1.2;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  touch-action: manipulation;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  padding-top: env(safe-area-inset-top);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: 50px;
+  /* 兼容不支持 env( ) 的设备  */
+  padding-bottom: calc(env(safe-area-inset-bottom) + 50px);
+  /* 在 iphone x + 中本句才会生效 */
+  padding-left: env(safe-area-inset-left);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  content: normal !important; // vw的polyfill解决方案会在用到的vw的地方添加content，会影响到img和伪元素
+}
+
+.collapse-transition {
+  transition: 0.3s height ease-in-out, 0.3s padding-top ease-in-out, 0.3s padding-bottom ease-in-out;
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #fafafa inset;
+  -webkit-box-shadow: 0 0 0px 1000px #fafafa inset;
+  -webkit-text-fill-color: #333;
+}
