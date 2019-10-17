@@ -22,7 +22,7 @@ function resolve(dir) {
 }
 
 module.exports = {
-  outputDir: 'cordova-app/www',
+  outputDir: 'dist',
   publicPath: IS_PRO ? './' : '/',
   productionSourceMap: IS_PRO,
   css: {
@@ -72,7 +72,7 @@ module.exports = {
         productionPlugins.push(
           new SentryPlugin({
             release: version, //发布的版本
-            include: path.join(__dirname, './cordova-app/www/js'), //需要上传到sentry服务器的资源目录,会自动匹配 js 以及 map 文件
+            include: path.join(__dirname, './dist/js'), //需要上传到sentry服务器的资源目录,会自动匹配 js 以及 map 文件
             urlPrefix: '~/js', //线上对应的 url 资源的相对路径
             ignore: ['node_modules'] //忽略文件目录, 当然我们在 inlcude 中制定了文件路径,这个忽略目录可以不加
           })
