@@ -19,7 +19,6 @@ export default class Home extends Vue {
 }
 </script>
 <style lang="less" scoped>
-@import '~@/assets/style/var.less';
 .layout__body {
   padding: 16px 16px 0 16px;
 }

@@ -68,7 +68,6 @@ export default class App extends Vue {
 </script>
 
 <style lang="less">
-@import '~@/assets/style/index.less';
 
 .router-view-c {
   transition: opacity 0.5s, transform 0.5s;

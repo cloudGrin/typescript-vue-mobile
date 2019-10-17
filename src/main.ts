@@ -13,6 +13,8 @@ import store from '@/store';
 
 import App from './App.vue';
 
+import '@/styles/index.less';
+
 import LocalConfig from '@/config.json';
 
 // 可作为全局通信的载体,用于非父子关系的组件间的通信上，常见的业务一般都可以用vuex替代

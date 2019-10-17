@@ -33,6 +33,14 @@ module.exports = {
       }
     }
   },
+  pluginOptions: {
+    'style-resources-loader': {
+      preProcessor: 'less',
+      patterns: [
+        path.resolve(__dirname, 'src/styles/var.less'),
+      ]
+    }
+  },
   chainWebpack: (config) => {
     // 添加别名
     config.resolve.alias
